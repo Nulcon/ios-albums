@@ -14,6 +14,10 @@ class AlbumDetailTableViewController: UITableViewController, SongTableViewCellDe
     updateViews()
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    updateViews()
+  }
+  
   func updateViews() {
     guard isViewLoaded else { return }
     title = "New Album"
